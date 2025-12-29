@@ -10,6 +10,39 @@ This implementation achieves full architectural parity with the Rust version whi
 | Linux | ARM64 | [linux-arm64.tar.gz](https://github.com/retired64/mediafire_py/releases/download/v1.0.0/linux-arm64.tar.gz) |
 | Windows | x64 | [mediafire-py-windows-x64.zip](https://github.com/retired64/mediafire_py/releases/download/v1.0.0/mediafire-py-windows-x64.zip) |
 | macOS | x64 | [macOS-app.zip](https://github.com/retired64/mediafire_py/releases/download/v1.0.0/macOS-app.zip) |
+
+## Usage
+
+### Using Pre-built Binaries
+
+Download the appropriate binary for your system from the [Downloads](#downloads) section above.
+
+**Linux/macOS:**
+```bash
+# Extract the archive
+unzip mediafire-py-linux-x64.zip  # or tar -xzf linux-arm64.tar.gz
+
+# Make executable
+chmod +x mediafire-py
+
+# Run
+./mediafire-py <mediafire_url>
+```
+
+**Windows:**
+```cmd
+# Extract the zip file
+# Run from Command Prompt or PowerShell
+mediafire-py.exe <mediafire_url>
+```
+
+**Example:**
+```bash
+./mediafire-py https://www.mediafire.com/file/example/file.zip
+```
+
+The file will be downloaded to your current directory with progress indicators and speed information displayed in real-time.
+
 ---
 
 ## Features
