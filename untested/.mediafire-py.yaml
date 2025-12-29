@@ -1,0 +1,44 @@
+# MediaFire Downloader Configuration
+# Save this file as ~/.mediafire-py.yaml or specify with --config-file
+
+# Maximum number of concurrent download workers
+max_workers: 10
+
+# API rate limit (requests per second)
+rate_limit: 5
+
+# List of proxy servers (HTTP, HTTPS, SOCKS5)
+# Leave empty [] to disable proxies
+proxies:
+  # Example proxies (uncomment and modify as needed):
+  # - "http://proxy1.example.com:8080"
+  # - "http://user:pass@proxy2.example.com:3128"
+  # - "socks5://proxy3.example.com:1080"
+  []
+
+# Use proxies for file downloads (true/false)
+# If false, proxies are only used for API requests
+proxy_downloads: false
+
+# Number of retry attempts for failed requests
+retry_attempts: 4
+
+# Base delay for exponential backoff (seconds)
+retry_base_delay: 1.0
+
+# Download chunk size (bytes)
+# Larger = faster but more memory usage
+chunk_size: 65536
+
+# HTTP timeout (seconds)
+timeout: 300
+
+# Default output directory
+output_dir: "."
+
+# Logging level: DEBUG, INFO, WARNING, ERROR, CRITICAL
+log_level: "INFO"
+
+# Optional: Log file path (null = no file logging)
+# Example: "/tmp/mediafire-py.log"
+log_file: null
