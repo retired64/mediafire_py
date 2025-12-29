@@ -17,17 +17,8 @@ jobs:
         os:
           - ubuntu-latest
           - windows-latest
-          - macos-latest
 
     steps:
-      # 🔴 FIX CRÍTICO PARA macOS
-      - name: Install gettext (macOS only)
-        if: matrix.os == 'macos-latest'
-        run: |
-          brew update
-          brew install gettext
-          brew link gettext --force
-
       - name: Build executable
         uses: sayyid5416/pyinstaller@v1
         with:
