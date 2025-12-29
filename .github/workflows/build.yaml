@@ -1,0 +1,30 @@
+name: Build mediafire-py binaries
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - windows-latest
+          - macos-latest
+
+    steps:
+      - name: Build executable
+        uses: sayyid5416/pyinstaller@v1
+        with:
+          spec: app.py
+          requirements: requirements.txt
+          python_ver: '3.10'
+          options: --onefile, --name mediafire-py
+          upload_exe_with_name: mediafire-py-${{ matrix.os }}
