@@ -1,0 +1,20 @@
+#!/bin/bash
+
+COMMIT_MSG=${1:-"standalone fletapp wip"}
+TAG_NAME=$2  # Segundo parámetro opcional
+
+echo "Iniciando proceso..."
+
+git add .
+git commit -m "$COMMIT_MSG"
+git branch -M main
+git push -u origin main
+
+if [ -n "$TAG_NAME" ]; then
+    echo "Creando y subiendo tag: $TAG_NAME"
+    git tag "$TAG_NAME"
+    git push origin "$TAG_NAME"
+    echo "Tag $TAG_NAME publicado."
+fi
+
+echo "Hecho."
