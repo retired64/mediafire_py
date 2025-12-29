@@ -1,5 +1,4 @@
-# mediafire_rs (Python Edition)
-
+# mediafire_py
 A high-performance, asynchronous MediaFire downloader written in Python, inspired by the original Rust project **mediafire_rs**.
 This implementation achieves full architectural parity with the Rust version while adding additional flexibility in proxy handling and runtime configuration.
 
