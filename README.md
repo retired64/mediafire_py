@@ -2,6 +2,14 @@
 A high-performance, asynchronous MediaFire downloader written in Python, inspired by the original Rust project **mediafire_rs**.
 This implementation achieves full architectural parity with the Rust version while adding additional flexibility in proxy handling and runtime configuration.
 
+## Downloads
+
+| OS | Arch | Link |
+|-------------------|--------------|-------------------|
+| Linux | x64 | [mediafire-py-linux-x64.zip](https://github.com/retired64/mediafire_py/releases/download/v1.0.0/mediafire-py-linux-x64.zip) |
+| Linux | ARM64 | [linux-arm64.tar.gz](https://github.com/retired64/mediafire_py/releases/download/v1.0.0/linux-arm64.tar.gz) |
+| Windows | x64 | [mediafire-py-windows-x64.zip](https://github.com/retired64/mediafire_py/releases/download/v1.0.0/mediafire-py-windows-x64.zip) |
+| macOS | Universal | [macOS-app.zip](https://github.com/retired64/mediafire_py/releases/download/v1.0.0/macOS-app.zip) |
 ---
 
 ## Features
