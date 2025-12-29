@@ -3,7 +3,7 @@
   <img src="src/img/logo-mediafire-py.png" alt="MediaFire-py Logo">
 </p>
 
-mediafire_py is a command-line tool that downloads files and folders from MediaFire with enterprise-grade features including resume support, concurrent downloads, proxy rotation, and hash verification.
+mediafire-py is a command-line tool that downloads files and folders from MediaFire with enterprise-grade features including resume support, concurrent downloads, proxy rotation, and hash verification.
 
 ## Downloads
 
