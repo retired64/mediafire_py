@@ -1,6 +1,10 @@
 # mediafire_py
-A high-performance, asynchronous MediaFire downloader written in Python, inspired by the original Rust project **mediafire_rs**.
-This implementation achieves full architectural parity with the Rust version while adding additional flexibility in proxy handling and runtime configuration.
+
+<p align="center">
+  <img src="src/img/logo-mediafire-py.png" alt="MediaFire-py Logo">
+</p>
+
+mediafire_py is a command-line tool that downloads files and folders from MediaFire with enterprise-grade features including resume support, concurrent downloads, proxy rotation, and hash verification.
 
 ## Downloads
 
