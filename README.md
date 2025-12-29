@@ -1,4 +1,3 @@
-# mediafire_py
 
 <p align="center">
   <img src="src/img/logo-mediafire-py.png" alt="MediaFire-py Logo">
